@@ -3,3 +3,72 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    grid-area: head;
+    background-color: lightblue;
+    padding: 24px;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: lightgray;
+    padding: 24px;
+}
+
+.main {
+    grid-area: main;
+    background-color: white;
+    padding: 24px;
+}
+
+.footer {
+    grid-area: foot;
+    background-color: lightblue;
+    padding: 24px;
+}
+
+.page-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "head"
+        "nav"
+        "main"
+        "foot";
+    gap: 15px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.card {
+    background-color: lightskyblue;
+    padding: 24px;
+}
+
+@media (min-width: 768px) {
+    .page-layout {
+        grid-template-columns: 220px 1fr;
+        grid-template-areas:
+            "head head"
+            "nav main"
+            "foot foot";
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-one {
+        grid-column: 1 / -1;
+    }
+}
