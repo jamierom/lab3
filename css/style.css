@@ -7,29 +7,33 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    color: #333333;
 }
 
 .header {
     grid-area: head;
-    background-color: lightblue;
+    background-color: #069494;
+    color: white;
     padding: 24px;
 }
 
 .nav {
     grid-area: nav;
-    background-color: lightgray;
+    background-color: #FF8243;
+    color: #333333;
     padding: 24px;
 }
 
 .main {
     grid-area: main;
-    background-color: white;
+    background-color: #FCE883;
     padding: 24px;
 }
 
 .footer {
     grid-area: foot;
-    background-color: lightblue;
+    background-color: #069494;
+    color: white;
     padding: 24px;
 }
 
@@ -51,8 +55,14 @@ body {
 }
 
 .card {
-    background-color: lightskyblue;
+    background-color: #FFC0CB;
+    color: #333333;
     padding: 24px;
+}
+
+.card ul {
+    color: #333333;
+    padding: 20px;
 }
 
 @media (min-width: 768px) {
